@@ -18,7 +18,7 @@ This repository contains a user registration form where users enter a username, 
 Clone the repository:
 
 ### text
-git clone https://[github.com/your-username/Form-Creation-Validation.git](https://github.com/Robson-Ali/Form-Creation-Validation)
+git clone https://[github.com/Robson-Ali/Form-Creation-Validation.git](https://github.com/Robson-Ali/Form-Creation-Validation)
 Open index.html in your preferred browser.
 
 ## Fill out the form fields and submit to see validation in action.
