@@ -9,6 +9,42 @@ This repository contains a user registration form where users enter a username, 
 - Password: Minimum 8 characters.
 - Users receive live feedback below the form if the inputs do not meet these requirements, or a success message when validation passes.
 
+## Task Requirements
+### Setup and Initial Code Structure
+1. Start with DOMContentLoaded Event:
+
+2. Wrap your entire script in a DOMContentLoaded event listener. This ensures your JavaScript runs after the entire HTML document has been loaded.
+Form Selection:
+
+3. Use document.getElementById to select the form with id="registration-form". Store this reference in a constant named form.
+Feedback Division Selection:
+
+4. Similarly, select the division where feedback will be displayed (id="form-feedback") and store it in a constant named feedbackDiv.
+4.1 Form Submission and Event Prevention
+4.2 Form Submission Event Listener:
+4.3 Add an event listener to form for the ‘submit’ event. Use an anonymous function to handle the event.
+4.4 Inside this function, call event.preventDefault() to prevent the form from submitting to the server. This is crucial for client-side validation.
+4.5 Input Retrieval and Trimming
+4.6 Retrieve User Inputs:
+4.7 Use document.getElementById to select each input field by its respective ID: username, email, and password.
+4.8 For each, retrieve the .value property and apply the .trim() method to remove any leading or trailing whitespace. Store these trimmed values in constants named after each input field.
+4.9 Validation Logic
+4.10 Initialize Validation Variables:
+
+5. Declare a variable named isValid and set it to true. This will track the overall validation status.
+6. Declare an array named messages to store validation error messages.
+7. Username Validation:
+7.1 Check if username.length is less than 3. If so, set isValid to false and add a specific error message to messages.
+Email Validation:
+7.2 Check if email includes both ‘@’ and ‘.’ characters. If not, set isValid to false and append a corresponding error message to messages.
+Password Validation:
+7.3 Ensure password.length is at least 8. If it falls short, update isValid to false and add an appropriate error message to messages.
+8. Displaying Feedback
+8.1 Feedback Display Logic:
+8.2 Make feedbackDiv visible by setting its style.display to "block".
+8.3 If isValid remains true, set the textContent of feedbackDiv to "Registration successful!" and its style.color to "#28a745".
+8.4 If isValid is false, join messages with <br> to form a single string, and assign this to the innerHTML of feedbackDiv. Set feedbackDiv.style.color to "#dc3545".
+
 ## Files Structure
 * index.html – Contains the HTML markup for the registration form.
 * style.css – Styles for the form layout and feedback messages.
