@@ -4,10 +4,10 @@ A simple user registration form project that demonstrates form creation and clie
 ## Project Overview
 This repository contains a user registration form where users enter a username, email, and password. The form implements basic validation rules using plain JavaScript to ensure data correctness before submission:
 
-* Username: Minimum 3 characters.
-* Email: Must contain '@' and '.' characters.
-* Password: Minimum 8 characters.
-* Users receive live feedback below the form if the inputs do not meet these requirements, or a success message when validation passes.
+- Username: Minimum 3 characters.
+- Email: Must contain '@' and '.' characters.
+- Password: Minimum 8 characters.
+- Users receive live feedback below the form if the inputs do not meet these requirements, or a success message when validation passes.
 
 ## Files Structure
 * index.html – Contains the HTML markup for the registration form.
